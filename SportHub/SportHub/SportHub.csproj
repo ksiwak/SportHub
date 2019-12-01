@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201912012208477_overrideConventionsForSportsAndTypes.Designer.cs">
       <DependentUpon>201912012208477_overrideConventionsForSportsAndTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912012239577_PopulateTypesTable.cs" />
+    <Compile Include="Migrations\201912012239577_PopulateTypesTable.Designer.cs">
+      <DependentUpon>201912012239577_PopulateTypesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -307,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912012208477_overrideConventionsForSportsAndTypes.resx">
       <DependentUpon>201912012208477_overrideConventionsForSportsAndTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912012239577_PopulateTypesTable.resx">
+      <DependentUpon>201912012239577_PopulateTypesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
