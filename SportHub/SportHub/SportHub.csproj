@@ -204,10 +204,21 @@
     <Compile Include="Migrations\201912012042483_InitialModel.Designer.cs">
       <DependentUpon>201912012042483_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912012126218_CreateSportTable.cs" />
+    <Compile Include="Migrations\201912012126218_CreateSportTable.Designer.cs">
+      <DependentUpon>201912012126218_CreateSportTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912012208477_overrideConventionsForSportsAndTypes.cs" />
+    <Compile Include="Migrations\201912012208477_overrideConventionsForSportsAndTypes.Designer.cs">
+      <DependentUpon>201912012208477_overrideConventionsForSportsAndTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Sport.cs" />
+    <Compile Include="Models\Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -290,6 +301,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912012042483_InitialModel.resx">
       <DependentUpon>201912012042483_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912012126218_CreateSportTable.resx">
+      <DependentUpon>201912012126218_CreateSportTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912012208477_overrideConventionsForSportsAndTypes.resx">
+      <DependentUpon>201912012208477_overrideConventionsForSportsAndTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
