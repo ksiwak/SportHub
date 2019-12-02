@@ -29,6 +29,7 @@ namespace SportHub.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(SportFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
