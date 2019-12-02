@@ -7,6 +7,8 @@ namespace SportHub.Models
     {
         public DbSet<Sport> Sports  { get; set; }
         public DbSet <Type> Types { get; set; }
+     //   public object Type { get; internal set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
