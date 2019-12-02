@@ -31,10 +31,15 @@ namespace SportHub.Controllers
         [HttpPost]
         public ActionResult Create(SportFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Types = _context.Types.ToList();
+                return View("Create", viewModel);
+            }
             var sport = new Sport
             {
                 PlayerId = User.Identity.GetUserId(),
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 TypeId = viewModel.Type,
                 Complex = viewModel.Complex
 
