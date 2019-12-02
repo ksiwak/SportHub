@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201912012239577_PopulateTypesTable.Designer.cs">
       <DependentUpon>201912012239577_PopulateTypesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912020752585_AddForeignKeyPropertiesToSport.cs" />
+    <Compile Include="Migrations\201912020752585_AddForeignKeyPropertiesToSport.Designer.cs">
+      <DependentUpon>201912020752585_AddForeignKeyPropertiesToSport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -317,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912012239577_PopulateTypesTable.resx">
       <DependentUpon>201912012239577_PopulateTypesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912020752585_AddForeignKeyPropertiesToSport.resx">
+      <DependentUpon>201912020752585_AddForeignKeyPropertiesToSport.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,8 +10,11 @@ namespace SportHub.Models
     {
         public int Id { get; set; }
 
-        [Required]
+      
         public  ApplicationUser Player { get; set; }
+
+        [Required]
+        public string PlayerId { get; set; }
 
         public DateTime DateTime { get; set; }
 
@@ -19,8 +22,10 @@ namespace SportHub.Models
         [StringLength(255)]
         public string Complex { get; set; }
 
-        [Required]
         public Type Type { get; set; }
+
+        [Required]
+        public byte TypeId { get; set; }
     }
     
 }

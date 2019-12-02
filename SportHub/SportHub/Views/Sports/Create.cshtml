@@ -5,7 +5,8 @@
 }
 
 <h2>Add a Sport</h2>
-<form>
+@using (Html.BeginForm("Create", "Sports"))
+{
     <div class="form-group">
         @Html.LabelFor(m => m.Complex)
         @Html.TextBoxFor(m => m.Complex, new { @class = "form-control" })
@@ -25,6 +26,7 @@
        
     </div>
     <button type ="submit"  class ="btn btn-primary">Save</button>
+}
 
-</form>
+
 
