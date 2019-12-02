@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using SportHub.Models;
 
 namespace SportHub.ViewModels
@@ -11,6 +12,7 @@ namespace SportHub.ViewModels
         public byte Type { get; set; }
        // public IEnumerable<Type> Types1 { get; set; }
         public List<Models.Type> Types { get; internal set; }
-       
+
+        public DateTime DateTime => DateTime.Parse($"{Date} {Time}");
     }
 }

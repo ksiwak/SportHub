@@ -34,7 +34,7 @@ namespace SportHub.Controllers
             var sport = new Sport
             {
                 PlayerId = User.Identity.GetUserId(),
-                DateTime = DateTime.Parse($"{viewModel.Date} {viewModel.Time}"),
+                DateTime = viewModel.DateTime,
                 TypeId = viewModel.Type,
                 Complex = viewModel.Complex
 
