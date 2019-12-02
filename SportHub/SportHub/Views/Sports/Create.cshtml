@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
+<h2>Add a Sport</h2>
 <form>
     <div class="form-group">
         @Html.LabelFor(m => m.Complex)
@@ -21,9 +21,10 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Type)
-        @Html.DropDownListFor(m => m.Type, new SelectList(Model.Types, "Id", "Name" ))
+        @Html.DropDownListFor(m => m.Type, new SelectList(Model.Types, "Id", "Name"), "", new {@class = "form-control"})
        
     </div>
+    <button type ="submit"  class ="btn btn-primary">Save</button>
 
 </form>
 

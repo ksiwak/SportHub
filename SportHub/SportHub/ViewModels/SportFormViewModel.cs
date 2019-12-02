@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services.Description;
-using SportHub.Models;
+﻿using System.Collections.Generic;
 
 namespace SportHub.ViewModels
 {
@@ -14,6 +9,6 @@ namespace SportHub.ViewModels
         public string Time { get; set; }
         public byte Type { get; set; }
         public List<Models.Type> Types { get; internal set; }
-       //  public IEnumerable <Type> Types { get; set; }
+       
     }
 }

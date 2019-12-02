@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-using System.Web.Services.Description;
 using SportHub.Models;
 using SportHub.ViewModels;
-using Type = System.Type;
 
 namespace SportHub.Controllers
 {
@@ -19,14 +13,13 @@ namespace SportHub.Controllers
         {
             _context = new ApplicationDbContext();
         }
-        // GET: Sports
       //  [Authorize]
         public ActionResult Create()
         {
             var viewModel = new SportFormViewModel
             {
                  Types = _context.Types.ToList()
-               // Types =  _context.Types.ToList()
+              
             };
 
             return View(viewModel);
