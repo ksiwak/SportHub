@@ -221,6 +221,10 @@
     <Compile Include="Migrations\201912020752585_AddForeignKeyPropertiesToSport.Designer.cs">
       <DependentUpon>201912020752585_AddForeignKeyPropertiesToSport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912032139085_AddNameToApplicationUser.cs" />
+    <Compile Include="Migrations\201912032139085_AddNameToApplicationUser.Designer.cs">
+      <DependentUpon>201912032139085_AddNameToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -231,6 +235,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomDate.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="ViewModels\SportFormViewModel.cs" />
     <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
@@ -326,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912020752585_AddForeignKeyPropertiesToSport.resx">
       <DependentUpon>201912020752585_AddForeignKeyPropertiesToSport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912032139085_AddNameToApplicationUser.resx">
+      <DependentUpon>201912032139085_AddNameToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
