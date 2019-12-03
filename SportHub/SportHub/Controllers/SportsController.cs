@@ -42,7 +42,7 @@ namespace SportHub.Controllers
                 PlayerId = User.Identity.GetUserId(),
                 DateTime = viewModel.GetDateTime(),
                 TypeId = viewModel.Type,
-                Complex = viewModel.Complex
+                Complex = viewModel.Location
 
             };
             _context.Sports.Add(sport);

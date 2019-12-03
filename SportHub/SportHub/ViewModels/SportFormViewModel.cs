@@ -8,7 +8,7 @@ namespace SportHub.ViewModels
     public class SportFormViewModel
     {
         [Required]
-        public string  Complex { get; set; }
+        public string  Location { get; set; }
 
         [Required]
         [CustomDate]
