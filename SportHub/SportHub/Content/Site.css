@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -61,10 +61,12 @@ span.field-validation-error {
 
 
 .navbar-brand {
-    font-weight: 700;
+    font-weight: 700; 
+
+}
     
 body {
-    font-size: 19px;
+    font-size: 17px;
 }
 
 body,
@@ -90,7 +92,8 @@ h6,
 
 .form-control {
     font-size: 17px;
-    padding: 7px 15px;
+    padding: 7px 20px;
+    -ms-border-radius: 9px;
     border-radius: 9px;
 }
 
@@ -107,3 +110,55 @@ form-control:focus {
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+.sports {
+    list-style: none;
+}
+
+/*Page level styles*/
+/* Page-level styles */
+.sports {
+    list-style: none;
+}
+
+.sports > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+.sports > li .date {
+            background: green;
+            color: white;
+            text-align: center;
+            width: 60px;
+            -ms-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+.sports > li .date .month {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 6px;
+    }
+
+.sports > li .date .day {
+        background: #bdb;
+        color: #333;
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+.sports > li .details {
+        position: absolute;
+        top: 0;
+        left: 70px;
+    }
+
+.sports > li .details .player {
+            font-weight: bold;
+            display: block;
+        }
+
+.sports > li .details .genre {
+            font-size: 15px;
+        }

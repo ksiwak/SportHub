@@ -21,6 +21,7 @@ namespace SportHub.Controllers
         {
             var upcomingEvents = _context.Sports
                 .Include(g => g.Player)
+                .Include(g => g.Type)
                 .Where(g=>g.DateTime > DateTime.Now);
             return View(upcomingEvents);
         }

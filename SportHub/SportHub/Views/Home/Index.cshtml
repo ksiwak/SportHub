@@ -1,13 +1,28 @@
 ﻿@model IEnumerable<SportHub.Models.Sport>
-
 @{
     ViewBag.Title = "Home Page";
 }
 
-<ul>
+<ul class="sports">
     @foreach (var sport in Model)
     {
-        <li>@sport.DateTime -@sport.Player.Name</li>
+        <li>
+            <div class="date">
+                <div class="month">
+                    @sport.DateTime.ToString("MMM")
+                </div>
+                <div class="day">
+                    @sport.DateTime.ToString("d ")
+                </div>
+            </div>
+            <div class="details">
+                <span class="player">
+                    @sport.Player.Name
+                </span>
+                <span class="type">
+                    @sport.Type.Name
+                </span>
+            </div>
+        </li>
     }
 </ul>
-
